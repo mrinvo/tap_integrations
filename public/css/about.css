@@ -1,0 +1,166 @@
+body{
+	margin:0;
+	padding:0;
+	font:15px /1.5 Arial, Helvetica, sans-serif;
+
+}
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+header{
+	color:#FFFFFF;
+	background-color: #35424a;
+	border-bottom: 3px solid  #e8491d;
+	min-height: 85px;
+}
+header #highlight ,.pagesULBar .current a{
+	color:#e8491d;
+}
+.headerContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav{
+	text-transform: uppercase;
+}
+header nav ul{
+	list-style-type: none;
+	margin:0;
+	padding:0px;
+}
+header nav ul li {
+	display: inline-block;
+	float:left;
+	margin-right: 40px;
+}
+header nav ul a {
+	text-decoration:none;
+	color:#ffffff;
+	font:16px Arial;
+}
+
+header nav ul a:hover {
+color:#cccccc;
+font-weight: 700;	
+
+}
+	/************************ subscribe section************/
+ .subscribeSection{
+	
+	background-color: #35424a;
+	color:#ffffff;
+}
+.subscribeDiv{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.subscribeSection form .eamilInput{ 
+	width: 260px;
+	height: 34px;
+	border-radius: 5px;
+}
+.subscribeSection form .subscribeButton{ 
+	width: 98px;
+	height: 40px;
+	background-color: #e8491d;
+	border-radius: 5px;
+	color:#FFFFFF;
+}
+/****** articles section ****/
+.articlesSection{
+	background-color: #F4F4F4;
+}
+.articlesContainer{
+	display: inline-grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 20px;
+
+}
+.nonHeadingDiv{
+	background-color: #35424a;
+	color: #ffffff;
+	border-radius: 2px;
+	padding: 5px 10px ;
+}
+.horizotalDiv{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	margin-top:20px;
+	background-color: #35424a;
+	color: #ffffff;
+	border-radius: 2px;
+	padding: 5px 10px ;
+	height: min-content;
+}
+/*********footer **************/
+
+footer{
+	background-color: #e8491d;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	color:#ffffff;
+	margin-top: 20px;
+}
+.footerContainer{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+/************** media queries *************/
+@media(max-width: 640px){
+	.headerContainer,.subscribeDiv{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.pagesULBar{
+	margin-left: 25px;
+}
+.pagesBar{
+		margin-bottom: 15px;
+}
+
+.articlesContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.subscribeForm{
+	margin-bottom: 15px;
+}
+
+}
+@media(max-width: 1007px) and ( min-width: 641px){
+	.headerContainer,.subscribeDiv,.articlesContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nonHeadingDiv{
+	margin-top: 40px;
+}
+.subscribeForm{
+	margin-bottom: 15px;
+}
+
+}
